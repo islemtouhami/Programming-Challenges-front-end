@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   display: flex;
+   justify-content: center;
+    align-items:center;
+    margin: 20px auto;
+    
+}
+hr{
+    margin-top:10px ;
+}
+.continer{
+   width: 400px;
+   text-align: center;
+   position: relative;
+   top:100px;
+   
+}
+.continer::after{
+    content:url("person-blue-shirt.png");
+    position: absolute;
+    top: -109px;
+    left:150px;
+    width: 50px;
+    height: 50px;
+
+}
+.continer::before {
+    content: "S+";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(66, 66, 223);
+    bottom: -15px;
+    right: 20px;
+    border-radius: 5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.cart{
+    padding: 40px;
+    border: 3px solid #eee;
+    border-radius: 3%;
+}
+.cart .accounts div {
+    width: 100%;
+    height: 50px;
+    background-color: #eee;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+.cart h2{
+    color: rgba(66, 66, 223, 0.733);
+    margin-bottom: 7px;
+    
+}
+h2::first-letter{
+    text-transform: uppercase;
+ }
+.cart h4{
+    color: grey;
+}
+h4::first-letter{
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+.accounts div {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+
+    font-weight: bold;
+    margin: 5px;
+}
+p::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+
+    
